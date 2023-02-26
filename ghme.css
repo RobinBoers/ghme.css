@@ -51,6 +51,8 @@ main {
     margin: 0 auto;
 }
 
+.section,
+section,
 article > p,
 article > h1,
 article > h2,
@@ -264,6 +266,30 @@ sub {
     color: rgb(var(--primary));
 }
 
+.title {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-transform: lowercase;
+}
+
+.info {
+    text-transform: lowercase;
+    font-family: var(--font-sans);
+    font-size: 0.875em;
+    line-height: 1.25em;
+    padding: 0.5em;
+    border-top: 1px solid rbga(var(--foreground), 0.1);
+    border-bottom: 1px solid rbga(var(--foreground), 0.1);
+}
+.info::before {
+    font-weight: bold;
+    content: "Let op: ";
+    text-transform: none;
+}
+
 .hidden {
     display: none;
 }
@@ -302,7 +328,6 @@ sub {
 
 /* Optional styling for forms */
 
-.label,
 label {
     font-size: 0.875em;
     line-height: 1.25em;
@@ -313,7 +338,6 @@ label {
 input,
 textarea,
 select,
-.button,
 button {
     padding: 0.5em;
     background: rgb(var(--background));
@@ -345,7 +369,6 @@ input[type="checkbox"] {
     width: initial;
 }
 
-.button,
 button,
 input[type="button"],
 input[type="submit"],
@@ -354,7 +377,6 @@ input[type="reset"] {
     background: rgb(var(--primary));
     color: rgb(var(--foreground));
 }
-.button:hover,
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover input[type="reset"]:hover {
