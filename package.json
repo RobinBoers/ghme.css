@@ -9,7 +9,7 @@
     "url": "https://geheimesite.nl"
   },
   "scripts": {
-    "build": "postcss src/ghme.css -o dist/ghme.css"
+    "build": "postcss src/main.css -o dist/ghme.css"
   },
   "bugs": {
     "url": "https://github.com/RobinBoers/ghme.css/issues"
