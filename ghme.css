@@ -46,6 +46,11 @@ body {
     font-family: var(--font-content);
 }
 
+::selection {
+    background-color: rgba(var(--foreground), 0.4);
+    color: rgb(var(--background));
+}
+
 main {
     max-width: var(--max-content-width);
     margin: 0 auto;
@@ -57,8 +62,8 @@ article > p,
 article > h1,
 article > h2,
 article > h3,
-article > h5,
 article > h4,
+article > h5,
 article > h6,
 article > blockquote,
 article > ul,
@@ -271,11 +276,11 @@ sub {
 }
 
 .title {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     font-family: var(--font-display);
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.5em;
+    line-height: 2em;
     text-transform: lowercase;
 }
 
@@ -331,7 +336,6 @@ sub {
 }
 
 /* Optional styling for forms */
-
 label {
     font-size: 0.875em;
     line-height: 1.25em;
@@ -373,6 +377,7 @@ input[type="checkbox"] {
     width: initial;
 }
 
+.button,
 button,
 input[type="button"],
 input[type="submit"],
@@ -381,6 +386,7 @@ input[type="reset"] {
     background: rgb(var(--primary));
     color: rgb(var(--foreground));
 }
+.button,
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover input[type="reset"]:hover {
@@ -398,4 +404,86 @@ input[type="submit"]:hover input[type="reset"]:hover {
 /* Make borders for invalid inputs red */
 form input:invalid:not(:placeholder-shown) {
     border-color: orangered;
+}
+
+/* Optional utilities for creating grids */
+
+.list-grid {
+    margin: 0;
+    display: grid;
+    width: 100%;
+    max-width: revert;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .list-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .list-grid {
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1280) {
+    .list-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+}
+
+.list-grid li {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.list-grid li h3 {
+    margin-top: 0;
+    margin-left: 0.5em;
+    font-size: 0.875em;
+    line-height: 1.25em;
+}
+
+@media (min-width: 768px) {
+    .list-grid li h3 {
+        margin-left: 0;
+    }
+}
+
+.list-grid li span {
+    font-size: 0.75em;
+    line-height: 1em;
+    opacity: 0.7;
+}
+
+.list-grid li h3 {
+    font-size: 0.75em;
+    line-height: 1em;
+}
+
+.list-grid li a {
+    background-color: transparent;
+    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+}
+
+.list-grid li a:hover {
+    background-color: transparent;
+    filter: brightness(0.9);
+}
+
+.list-grid li a img {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    width: 100%;
 }
