@@ -49,17 +49,19 @@ input[type="reset"] {
     background: rgb(var(--primary));
     color: rgb(var(--foreground));
 }
-.button,
+.button:hover,
 button:hover,
 input[type="button"]:hover,
-input[type="submit"]:hover input[type="reset"]:hover {
+input[type="submit"]:hover,
+input[type="reset"]:hover {
     filter: brightness(0.9);
 }
 @media (prefers-color-scheme: dark) {
     .button,
     button,
     input[type="button"],
-    input[type="submit"] {
+    input[type="submit"],
+    input[type="reset"] {
         color: rgb(var(--background));
     }
 }
