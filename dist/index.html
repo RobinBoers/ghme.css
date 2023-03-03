@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ghme.css</title>
+
+        <link rel="stylesheet" href="ghme.css" type="text/css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fira+Sans+Condensed:ital,wght@1,200&family=Merriweather&family=Poppins:wght@600&display=swap"
+            type="text/css"
+        />
+    </head>
+    <body>
+        <main>
+            <article>
+                <h1>ghme.css Demo</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    <span class="bold">adipiscing</span> elit. Suspendisse ut
+                    quam vehicula, egestas orci vitae, lobortis ante. Mauris
+                    auctor elementum tempor. Maecenas egestas vel nunc ut
+                    pharetra. In hac habitasse platea dictumst. Curabitur tempus
+                    ipsum ipsum, sed euismod erat accumsan ultrices. Nullam sed
+                    felis a purus porttitor consectetur non vel mi. Ut
+                    consectetur euismod magna, in commodo erat mattis eu.
+                    Quisque odio massa, euismod id velit at, aliquet finibus
+                    nulla. Cras in est eu quam congue interdum. Fusce a volutpat
+                    nulla. Donec quis ligula dictum erat condimentum facilisis
+                    quis nec purus.
+                </p>
+
+                <p>
+                    Ut blandit suscipit tellus, sed imperdiet mi euismod ac.
+                    Pellentesque vulputate sem ut ultrices pellentesque.
+                    <a href="https://geheimesite.nl">Morbi fringilla</a>, justo
+                    aliquam hendrerit lacinia, turpis tortor lacinia eros, sit
+                    amet bibendum augue leo ut eros. Aenean ac consequat dolor.
+                    Ut ac tortor quis est interdum tempor. Vivamus sit amet
+                    libero id lacus sagittis feugiat ut quis metus. Suspendisse
+                    viverra viverra erat sed mollis. Aenean magna magna,
+                    ultrices nec fermentum tincidunt, ultrices eget ipsum. Nunc
+                    pretium condimentum nisl, at bibendum risus. Maecenas
+                    faucibus nisi ut enim lacinia, at dictum ipsum accumsan.
+                    Vestibulum a pulvinar augue. Sed nec magna facilisis,
+                    ullamcorper nisl nec, auctor est. Fusce nec posuere eros, a
+                    mollis ante. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
+                </p>
+
+                <figure>
+                    <img
+                        src="https://api.lorem.space/image/pizza?w=1080&h=150"
+                    />
+
+                    <figcaption>
+                        Our delicious pizza, made just for you!
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Morbi a sollicitudin tellus. Pellentesque nec mi ipsum. Nunc
+                    in dignissim lacus. Ut elementum est nec cursus interdum.
+                    Cras efficitur ipsum eu ante dictum, ac cursus tortor
+                    ullamcorper. Integer mattis, lectus in volutpat porta,
+                    tortor magna interdum massa, vitae rutrum nibh tortor in
+                    nulla. Mauris tristique ligula elit, eu ultricies augue
+                    tincidunt quis. Nunc ipsum urna, consequat ac nulla id,
+                    consequat congue massa. Class aptent taciti sociosqu ad
+                    litora torquent per conubia nostra, per inceptos himenaeos.
+                    Etiam aliquet mi at purus aliquam, ac gravida magna varius.
+                    Nulla tempor cursus neque non imperdiet. Praesent felis
+                    tortor, faucibus ac neque nec, pellentesque porta massa. Ut
+                    malesuada nec ipsum ac lacinia.
+                </p>
+
+                <blockquote>
+                    <p>
+                        Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos. Maecenas
+                        sagittis orci eleifend nibh placerat lobortis. Proin
+                        egestas lectus at erat volutpat, sed posuere ligula
+                        consectetur.
+                    </p>
+                </blockquote>
+
+                <p>
+                    Aenean vestibulum elit ac turpis sodales hendrerit. Aenean
+                    eu ex congue purus aliquam interdum vel in quam. Vestibulum
+                    ac condimentum elit. Pellentesque at risus blandit,
+                    ullamcorper turpis ut, sodales sapien. Vestibulum malesuada
+                    ornare velit a hendrerit. Etiam nisl sem, pretium a
+                    imperdiet at, dictum non magna. Proin magna neque, vehicula
+                    at risus non, porttitor interdum magna. Suspendisse
+                    suscipit, arcu eu aliquam malesuada, ligula mi dapibus
+                    massa, et sollicitudin dolor tellus a metus. Praesent
+                    sagittis tellus quam, a rhoncus mi venenatis at. Nam sed leo
+                    a mauris convallis tempus in aliquet erat. Pellentesque non
+                    neque massa. Nunc dignissim vestibulum orci, vel varius erat
+                    ullamcorper ut. Ut et risus vitae ex varius finibus.
+                </p>
+
+                <h2>Coding is amazing</h2>
+
+                <p>
+                    Fusce vestibulum nisi nec arcu malesuada fermentum. Nulla
+                    bibendum tincidunt eros, id maximus velit. Donec vehicula
+                    erat quis metus ornare, in feugiat nunc sagittis. Curabitur
+                    ornare massa turpis, sit amet lacinia nunc aliquam id. Morbi
+                    malesuada ligula vel enim pulvinar porta. Etiam dapibus
+                    finibus lectus, eleifend ultrices lorem.
+                </p>
+
+                <code class="highlight">
+                    <pre>
+const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
+
+if (context.params.event.content.startsWith(`${process.env.PREFIX}random`)) {
+  await lib.discord.channels['@0.2.0'].messages.create({
+    channel_id: context.params.event.channel_id,
+    content: `${Math.floor(Math.random() * 1000) + 1}`,
+  });
+}
+        </pre
+                    >
+                </code>
+
+                <p>
+                    Donec non sem blandit, gravida mi id, venenatis metus. Fusce
+                    iaculis ex eget elit dictum, eget bibendum dui condimentum.
+                    Pellentesque iaculis augue a sem lobortis pharetra. Etiam
+                    sit amet tellus aliquet, pellentesque mi quis, consectetur
+                    mauris. Quisque ac justo metus.
+                </p>
+
+                <h3>Even the planets agree</h3>
+
+                <p>
+                    Aliquam sodales quam non libero molestie, sit amet imperdiet
+                    velit convallis. Etiam lacus lorem, lobortis eu mi in,
+                    vehicula convallis magna. Nunc metus odio, luctus ac felis
+                    ac, semper fermentum mauris:
+                </p>
+
+                <table>
+                    <caption>
+                        Data about the planets of our solar system (Planetary
+                        facts taken from
+                        <a
+                            href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+                            >Nasa's Planetary Fact Sheet - Metric</a
+                        >).
+                    </caption>
+                    <colgroup>
+                        <col span="2" />
+                        <col style="border: 2px solid black" />
+                        <col span="9" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <td colspan="2"></td>
+                            <th scope="col">Name</th>
+                            <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                            <th scope="col">Diameter (km)</th>
+                            <th scope="col">Density (kg/m<sup>3</sup>)</th>
+                            <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+                            <th scope="col">Length of day (hours)</th>
+                            <th scope="col">
+                                Distance from Sun (10<sup>6</sup>km)
+                            </th>
+                            <th scope="col">Mean temperature (°C)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="4" colspan="2" scope="rowgroup">
+                                Terrestrial planets
+                            </th>
+                            <th scope="row">Mercury</th>
+                            <td>0.330</td>
+                            <td>4,879</td>
+                            <td>5427</td>
+                            <td>3.7</td>
+                            <td>4222.6</td>
+                            <td>57.9</td>
+                            <td>167</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Venus</th>
+                            <td>4.87</td>
+                            <td>12,104</td>
+                            <td>5243</td>
+                            <td>8.9</td>
+                            <td>2802.0</td>
+                            <td>108.2</td>
+                            <td>464</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Earth</th>
+                            <td>5.97</td>
+                            <td>12,756</td>
+                            <td>5514</td>
+                            <td>9.8</td>
+                            <td>24.0</td>
+                            <td>149.6</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mars</th>
+                            <td>0.642</td>
+                            <td>6,792</td>
+                            <td>3933</td>
+                            <td>3.7</td>
+                            <td>24.7</td>
+                            <td>227.9</td>
+                            <td>-65</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="4" scope="rowgroup">Jovian planets</th>
+                            <th rowspan="2" scope="rowgroup">Gas giants</th>
+                            <th scope="row">Jupiter</th>
+                            <td>1898</td>
+                            <td>142,984</td>
+                            <td>1326</td>
+                            <td>23.1</td>
+                            <td>9.9</td>
+                            <td>778.6</td>
+                            <td>-110</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Saturn</th>
+                            <td>568</td>
+                            <td>120,536</td>
+                            <td>687</td>
+                            <td>9.0</td>
+                            <td>10.7</td>
+                            <td>1433.5</td>
+                            <td>-140</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" scope="rowgroup">Ice giants</th>
+                            <th scope="row">Uranus</th>
+                            <td>86.8</td>
+                            <td>51,118</td>
+                            <td>1271</td>
+                            <td>8.7</td>
+                            <td>17.2</td>
+                            <td>2872.5</td>
+                            <td>-195</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Neptune</th>
+                            <td>102</td>
+                            <td>49,528</td>
+                            <td>1638</td>
+                            <td>11.0</td>
+                            <td>16.1</td>
+                            <td>4495.1</td>
+                            <td>-200</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" scope="row">Dwarf planets</th>
+                            <th scope="row">Pluto</th>
+                            <td>0.0146</td>
+                            <td>2,370</td>
+                            <td>2095</td>
+                            <td>0.7</td>
+                            <td>153.3</td>
+                            <td>5906.4</td>
+                            <td>-225</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    Proin varius risus non fringilla scelerisque. Curabitur non
+                    porttitor erat. Praesent eget maximus tellus, a gravida
+                    lacus. Proin molestie semper mi a congue. Proin sed eros a
+                    ligula commodo pellentesque a ultricies arcu. Phasellus eget
+                    feugiat nisl, nec aliquam nunc. Nunc imperdiet vestibulum
+                    erat. Vivamus nec semper tellus. Donec vel vestibulum lorem.
+                </p>
+
+                <h2>Forms</h2>
+
+                <p>
+                    Maecenas turpis neque, sodales id vehicula sodales, volutpat
+                    facilisis augue. Donec bibendum eget nisl eget elementum.
+                    Quisque faucibus pretium posuere. Etiam non velit mattis mi
+                    pellentesque consectetur a vitae neque. Pellentesque at
+                    consequat erat. Nunc non tincidunt neque, eu aliquet nibh.
+                    Cras finibus justo in purus imperdiet, at finibus ex
+                    pharetra. Curabitur sollicitudin, massa at sodales vehicula,
+                    eros elit tempor tortor, egestas cursus turpis velit nec
+                    augue. Aliquam ultrices tellus efficitur, finibus metus ut,
+                    iaculis erat. Ut ex ligula, ultrices eu semper sed,
+                    tristique ut orci. Phasellus ornare diam in hendrerit
+                    semper. Aenean lacinia lorem vestibulum bibendum euismod.
+                    Nunc magna diam, molestie ut vestibulum sed, efficitur eget
+                    neque. Sed eget eros vel sem cursus euismod non a augue.
+                    Praesent tristique id felis eget gravida.
+                </p>
+
+                <form>
+                    <p>
+                        <strong
+                            >This is just a test form. It doesn't do
+                            anything.</strong
+                        >
+                    </p>
+
+                    <p>
+                        <select>
+                            <option selected="selected" value="1">Title</option>
+                            <option value="2">Mr</option>
+                            <option value="3">Miss</option>
+                            <option value="4">Mrs</option>
+                            <option value="5">Other</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>Name</label>
+                        <input
+                            type="text"
+                            name="firstname"
+                            placeholder="John"
+                        />
+                        <input type="text" name="surname" placeholder="Doe" />
+                    </p>
+
+                    <p>
+                        <label>Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="hello@geheimesite.nl"
+                            required
+                        />
+                    </p>
+
+                    <p>
+                        <label>Enquiry type:</label>
+                        <label
+                            ><input
+                                checked="checked"
+                                name="type"
+                                type="radio"
+                                value="sales"
+                            />
+                            Sales</label
+                        >
+                        <label
+                            ><input name="type" type="radio" value="support" />
+                            Support</label
+                        >
+                        <label
+                            ><input name="type" type="radio" value="billing" />
+                            Billing</label
+                        >
+                    </p>
+
+                    <p>
+                        <label>Message</label>
+                        <textarea rows="6"></textarea>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input
+                                type="checkbox"
+                                id="checkbox"
+                                value="terms"
+                            />
+                            I agree to the <a href="#">terms and conditions</a>
+                        </label>
+                    </p>
+
+                    <button>Send</button>
+                    <button type="reset">Reset</button>
+                    <button disabled="disabled">Disabled</button>
+                </form>
+
+                <hr />
+
+                <p>
+                    Maecenas rhoncus molestie justo. Sed iaculis facilisis odio
+                    a molestie. Integer cursus leo orci, eu facilisis mi cursus
+                    a. Sed commodo tincidunt nibh quis hendrerit. Praesent non
+                    ex pulvinar dolor auctor pharetra. In condimentum nisi eu
+                    sagittis pulvinar. Sed ut justo quis justo pellentesque
+                    pulvinar. Nam vitae arcu arcu. Nam tempus magna mauris, sit
+                    amet rutrum elit fringilla eu. Quisque sed quam mi. Sed
+                    pretium pharetra neque at ultrices. Duis ac eros ac urna
+                    pellentesque lobortis a vitae felis. Praesent quis vulputate
+                    purus. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                </p>
+
+                <p>
+                    Praesent a auctor nibh, a viverra nulla. Nunc id sagittis
+                    quam. Ut porttitor nunc ut lacus elementum, vel auctor elit
+                    feugiat. In hac habitasse platea dictumst. Etiam id risus id
+                    diam feugiat volutpat. Nulla lectus metus, tristique non
+                    velit eget, consectetur consectetur elit. Phasellus dapibus
+                    tempus egestas. In ultricies purus eu elementum lobortis.
+                    Praesent molestie sapien quis enim euismod, vel blandit nisi
+                    dapibus. Integer non tempus nibh.
+                </p>
+
+                <div class="footnotes" role="doc-endnotes">
+                    <hr />
+                    <ol>
+                        <li id="fn:1">
+                            <p>
+                                Aenean vitae rhoncus diam. Pellentesque maximus quam id erat mollis viverra. &#160;<a
+                                    href="#fnref:1"
+                                    class="footnote-backref"
+                                    role="doc-backlink"
+                                    >&#x21a9;&#xfe0e;</a
+                                >
+                            </p>
+                        </li>
+                        <li id="fn:2">
+                            <p>
+                                Morbi gravida dui venenatis, consectetur est cursus, iaculis odio. Aliquam erat dolor, sagittis id viverra luctus, mollis vitae dolor.&#160;<a
+                                    href="#fnref:2"
+                                    class="footnote-backref"
+                                    role="doc-backlink"
+                                    >&#x21a9;&#xfe0e;</a
+                                >
+                            </p>
+                        </li>
+                        <li id="fn:3">
+                            <p>
+                                Nunc id sagittis quam. Ut porttitor nunc ut lacus elementum, vel auctor elit feugiat. In hac habitasse platea dictumst. Etiam id risus id diam feugiat volutpat. Nulla lectus metus, tristique non velit eget, consectetur consectetur elit. Phasellus dapibus tempus egestas. In ultricies purus eu elementum lobortis. Praesent molestie sapien.&#160;<a
+                                    href="#fnref:3"
+                                    class="footnote-backref"
+                                    role="doc-backlink"
+                                    >&#x21a9;&#xfe0e;</a
+                                >
+                            </p>
+                        </li>
+                        <li id="fn:4">
+                            <p>
+                                Phasellus rutrum, sem et venenatis dapibus, mi leo pulvinar orci, vitae laoreet felis felis non sapien. Nulla non nisl ligula. Fusce rhoncus imperdiet dictum. &#160;<a
+                                    href="#fnref:4"
+                                    class="footnote-backref"
+                                    role="doc-backlink"
+                                    >&#x21a9;&#xfe0e;</a
+                                >
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
