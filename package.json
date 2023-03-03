@@ -1,0 +1,24 @@
+{
+  "name": "ghme.css",
+  "version": "0.0.1",
+  "description": "Lightweigt and pretty CSS framework based on the stylesheet of my personal site.",
+  "homepage": "https://docs.geheimesite.nl/ghme.css",
+  "author": {
+    "name": "Robin Boers",
+    "email": "hello@geheimesite.nl",
+    "url": "https://geheimesite.nl"
+  },
+  "scripts": {
+    "build": "postcss src/ghme.css -o dist/ghme.css"
+  },
+  "bugs": {
+    "url": "https://github.com/RobinBoers/ghme.css/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.15",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0"
+  }
+}
