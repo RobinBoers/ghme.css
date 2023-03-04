@@ -2,6 +2,10 @@
 @import "utilities.css";
 @import "forms.css";
 
+@custom-media --enable-forms true;
+@custom-media --enable-utilities true;
+@custom-media --enable-code-blocks true;
+
 :root {
     --background: 255, 255, 255;
     --foreground: 0, 0, 0;

@@ -145,19 +145,21 @@ hr {
     }
 }
 
-pre code,
-code pre,
-.highlight pre {
-    display: block;
-    font-family: var(--font-code);
-    padding: 12px;
-    width: 100%;
-    overflow: auto;
-    overflow-wrap: break-word;
-    line-height: initial;
-    border-radius: 5px;
-    background: rgb(var(--foreground));
-    color: rgb(var(--background));
+@media (--enable-code-blocks) {
+    pre code,
+    code pre,
+    .highlight pre {
+        display: block;
+        font-family: var(--font-code);
+        padding: 12px;
+        width: 100%;
+        overflow: auto;
+        overflow-wrap: break-word;
+        line-height: initial;
+        border-radius: 5px;
+        background: rgb(var(--foreground));
+        color: rgb(var(--background));
+    }
 }
 
 h1,
