@@ -1,7 +1,7 @@
 module.exports = {
     plugins: [
         require("postcss-import"),
-        require("postcss-custom-media"),
+        require("@csstools/postcss-conditional-values"),
         require("cssnano"),
         require("autoprefixer"),
     ],

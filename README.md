@@ -10,12 +10,16 @@ Here's a little demo hosted using GitHub pages: <https://docs.geheimesite.nl/ghm
 Include the `ghme.css` file in your HTML `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://raw.githubusercontent.com/RobinBoers/ghme.css/master/ghme.css" type="text/css">
+<link
+    rel="stylesheet"
+    href="https://docs.geheimesite.nl/ghme.css/ghme.css"
+    type="text/css"
+/>
 ```
 
 ## Configuration
 
-Some things like site width, fonts and colors can be configured using CSS custom properties. Here's the default config:
+Some things like content width, fonts and colors can be configured using CSS custom properties. Here's the default config:
 
 ```css
 :root {
@@ -26,15 +30,32 @@ Some things like site width, fonts and colors can be configured using CSS custom
     --max-content-width: 1100px;
     --max-text-width: 650px;
 
+    --enable-code-blocks: initial;
+
     --font-headings: "Poppins", var(--font-sans);
     --font-subheadings: "Fira Sans Condensed", var(--font-sans);
     --font-display: "Bungee Shade", var(--font-sans);
     --font-content: "Merriweather", var(--font-sans);
     --font-code: ui-monospace, "DejaVu LGC Sans Code", "DejaVu Sans Code",
-        "DejaVu Sans Mono", "Cascadia Code", "Droid Sans Mono", "SFMono-Regular",
-        monospace;
+        "DejaVu Sans Mono", "Cascadia Code", "Droid Sans Mono",
+        "SFMono-Regular", monospace;
 }
 ```
 
 The colors are in the RGB format.
 
+The `--enable-code-blocks` variable is a [`var: ;` hack](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-conditional-values). To turn it on (default):
+
+```css
+:root {
+    --enable-code-blocks: initial;
+}
+```
+
+And to turn it off:
+
+```css
+:root {
+    --enable-code-blocks: ;
+}
+```
