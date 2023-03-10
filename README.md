@@ -59,3 +59,22 @@ And to turn it off:
     --enable-code-blocks: ;
 }
 ```
+
+<!--
+
+## GridLover
+
+The typography code has been generated using [gridlover.net](https://gridlover.net) using these settings:
+
+- Fontsize: `21`
+- Line height: `1.56`
+- Scale factor: `1.259`
+
+Modifications to CSS:
+
+- Margin bottom for H1 to 1 unit
+- Line height for h2 to 1 unit
+- Line height for h3 to 2 units
+- Remove border for `<hr>`
+
+-->
