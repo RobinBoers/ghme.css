@@ -64,11 +64,6 @@ a:hover {
     background-color: rgb(var(--primary));
     color: rgb(var(--foreground));
 }
-@media (prefers-color-scheme: dark) {
-    a:hover {
-        color: rgb(var(--background));
-    }
-}
 
 img {
     user-select: none;
