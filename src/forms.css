@@ -56,15 +56,6 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
     filter: brightness(0.9);
 }
-@media (prefers-color-scheme: dark) {
-    .button,
-    button,
-    input[type="button"],
-    input[type="submit"],
-    input[type="reset"] {
-        color: rgb(var(--background));
-    }
-}
 
 /* Make borders for invalid inputs red */
 form input:invalid:not(:placeholder-shown) {
