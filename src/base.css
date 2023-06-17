@@ -47,7 +47,9 @@ article > blockquote,
 article > ul,
 article > ol,
 article > form,
-article > .footnotes {
+article > .footnotes
+li ul,
+li ol {
     max-width: var(--max-text-width);
     margin-left: auto;
     margin-right: auto;
