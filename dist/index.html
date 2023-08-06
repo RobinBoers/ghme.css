@@ -56,11 +56,11 @@
 
                 <figure>
                     <img
-                        src="https://api.lorem.space/image/pizza?w=1080&h=150"
+                        src="https://placekitten.com/g/1200/600"
                     />
 
                     <figcaption>
-                        Our delicious pizza, made just for you!
+                        Our delicious ~~pizza~~ kittens, prepared just for you!
                     </figcaption>
                 </figure>
 
@@ -117,19 +117,14 @@
                     finibus lectus, eleifend ultrices lorem.
                 </p>
 
-                <code class="highlight">
-                    <pre>
-const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
+                <pre><code class="highlight">const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
 
 if (context.params.event.content.startsWith(`${process.env.PREFIX}random`)) {
   await lib.discord.channels['@0.2.0'].messages.create({
     channel_id: context.params.event.channel_id,
     content: `${Math.floor(Math.random() * 1000) + 1}`,
   });
-}
-        </pre
-                    >
-                </code>
+}</code></pre>
 
                 <p>
                     Donec non sem blandit, gravida mi id, venenatis metus. Fusce
