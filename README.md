@@ -3,7 +3,7 @@
 Lightweigt and pretty (in my opinion) CSS framework based on the stylesheet of my personal site.  
 This project is meant to be used as a boilerplate for a website (see my site for an example).
 
-Here's a little demo hosted using GitHub pages: <https://docs.geheimesite.nl/ghme.css>
+This repository is retired in favour of <cdn.geheimesite.nl>, and shall not receive further updates.
 
 ## Usage
 
@@ -12,7 +12,7 @@ Include the `ghme.css` file in your HTML `<head>`:
 ```html
 <link
     rel="stylesheet"
-    href="https://docs.geheimesite.nl/ghme.css/ghme.css"
+    href="https://cdn.geheimesite.nl/ghme.css"
     type="text/css"
 />
 ```
@@ -30,8 +30,6 @@ Some things like content width, fonts and colors can be configured using CSS cus
     --max-content-width: 1100px;
     --max-text-width: 650px;
 
-    --enable-code-blocks: initial;
-
     --font-headings: "Poppins", var(--font-sans);
     --font-subheadings: "Fira Sans Condensed", var(--font-sans);
     --font-display: "Bungee Shade", var(--font-sans);
@@ -43,22 +41,6 @@ Some things like content width, fonts and colors can be configured using CSS cus
 ```
 
 The colors are in the RGB format.
-
-The `--enable-code-blocks` variable is a [`var: ;` hack](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-conditional-values). To turn it on (default):
-
-```css
-:root {
-    --enable-code-blocks: initial;
-}
-```
-
-And to turn it off:
-
-```css
-:root {
-    --enable-code-blocks: ;
-}
-```
 
 <!--
 
